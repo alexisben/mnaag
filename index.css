@@ -1,0 +1,510 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+header {
+    height: 57px;
+    width: 100%;
+    font-family: 'Basier Circle';
+    font-style: normal;
+    font-size: 18px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    z-index: 10;
+}
+
+
+/*menu barre*/
+
+header .navbar ul {
+    display: flex;
+}
+
+header .navbar li a {
+    padding: 19px 16px;
+    display: block;
+    color: #000;
+    background-color: white;
+    text-decoration: none;
+}
+
+header .navbar li a:hover {
+    background-color: #00243d;
+    color: white;
+    text-decoration: none;
+}
+
+header .navbar ul li:hover ul {
+    display: block;
+}
+
+/*fin menu barre*/
+
+header .navbar ul li:hover .titre {
+    background-color: #00243d;
+    color: white;
+    text-decoration: none;
+
+}
+
+header body {
+    background-color: rgb(75, 55, 55);
+}
+
+
+header #seaching {
+    width: 182px;
+    height: 27px;
+}
+
+header .logo {
+    height: 55px;
+    width: 88px;
+}
+
+header .logo img {
+    height: 100%;
+
+}
+
+header .menu {
+    height: 16px;
+    width: 25px;
+
+}
+
+header .b{
+    width: 20px;
+    /* opacity: 0; */
+}
+
+header .b img {
+    width: 100%;
+    height: auto;
+}
+
+/*interieur barre*/
+
+header .navbar li ul {
+    display: none;
+    border: 1px solid black;
+
+}
+
+header .navbar li ul :last-child {
+    border: bottom 1px black;
+}
+
+header .navbar li ul :hover {
+    background-color: #E0F3FF;
+    color: black;
+    text-decoration: none;
+}
+
+
+.cover {
+    background-image: url("image/musee_guimet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    opacity: 1;
+}
+
+.cover h1 {
+    display: flex;
+    color: white;
+    justify-content: end;
+    text-align: end;
+    font-family: 'LT Museum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 140%;
+    margin-right: 4%;
+
+}
+
+
+
+.cover .triangle{
+    margin-top: -15vw;
+    height: 30vw;
+    background: linear-gradient(5deg, #E0F3FF 0 50%, rgba(255, 255, 255, 0) 50% 100%);
+}
+
+.cover .arrow{
+    display: flex;
+    margin-top: -15vw;
+    margin-left: 3vh;
+}
+
+.agenda {
+    background-color: #E0F3FF;
+
+}
+
+.agenda h2 {
+    margin-left: 19.7%;
+}
+
+.agenda .square {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    margin-left: 19.7%;
+    margin-right: 11.9%;
+
+}
+
+.agenda .rectangle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.agenda .image-square {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.7s ease;
+
+}
+
+.agenda .image-rect {
+    width: 100%;
+    transition: transform 0.7s ease;
+
+}
+
+.agenda .bloc-square {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 1.7%;
+    overflow: hidden;
+}
+
+.agenda .image-square:hover {
+    transform: scale(1.08);
+}
+
+.agenda .bloc-rect {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 1.7%;
+    overflow: hidden;
+}
+
+.agenda .image-rect:hover {
+    transform: scale(1.07);
+}
+
+.agenda .info-square {
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+.agenda .info-square h3,.agenda .info-square p {
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+}
+
+.agenda .info-rect {
+    position: absolute;
+    width: 20%;
+    height: 7%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+.agenda .info-rect h3,.agenda .info-square p {
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+}
+
+
+.collec{
+    background: linear-gradient(353deg, rgba(255, 255, 255, 0) 0 50%, #E0F3FF 50% 100%);
+    padding-top: 9.7%;
+
+}
+
+.collec .splide button {
+    background: transparent;
+    border: 0;
+}
+
+
+.collec h2 {
+    margin-left: 19.7%;
+}
+
+.collec .splideall {
+
+    padding-top: 500px;
+    padding-bottom: 500px;
+}
+
+.collec #scroll_to_top {
+
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 30px;
+}
+
+.collec #scroll_to_top img {
+    width: 50px;
+}
+
+
+.collec .splide__arrow--next {
+    margin-right: 8%;
+    transform: scale(1.25)
+}
+
+.collec .splide__arrow--prev {
+    margin-right: 2%;
+    transform: scale(1.25)
+}
+
+.collec .splide__arrows {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2%;
+}
+
+
+.collec .splide__arrow--prev:hover {
+
+    transform: scale(1.55);
+    transition: transform 0.5s;
+}
+
+
+.collec .splide__arrow--next:hover {
+    transform: scale(1.55);
+    transition: transform 0.5s;
+}
+
+
+
+
+
+.collec .splide__slide {
+
+    background-size: cover;
+    background-position: center;
+    margin: 0 50px 0 0;
+    overflow: hidden;
+}
+
+.collec .splide__slide:hover {
+
+    background-size: 120%;
+    transition: background-size 0.5s;
+}
+
+.collec .splide__slide {
+    width: 350px;
+    height: 350px;
+}
+
+.collec .splide__slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.collec .splide__slide img:hover {
+    transform: scale(1.1);
+}
+
+
+
+.collec .queen-maya {
+    /* background-image: url("image/collec/queen_maya.png") */
+}
+
+.collec .kozu-osaka {
+    background-image: url("image/collec/vue_kozu_osaka.png")
+}
+
+.collec .boudha-hand {
+    background-image: url("image/collec/boudha_hand.png");
+
+}
+
+.collec .boudha-head {
+    background-image: url("image/collec/boudha\ head.jpg");
+}
+
+.collec .corean-jarre {
+    background-image: url("image/collec/corean_jarre.jpg");
+}
+
+.collec .suzukake {
+    background-image: url("image/collec/suzukake.jpg");
+}
+
+.pause {
+
+    border: 5px solid black;
+    margin-top: 20vw;
+    display: flex;
+    margin-bottom: 20vw;
+    
+}
+
+.event {
+    padding-top: 20vw;
+    background-color: #E0F3FF;
+}
+
+.event h2 {
+    margin-left: 19.7%;
+}
+
+.event .square {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    margin-left: 19.7%;
+    margin-right: 11.9%;
+    padding-bottom: 11.3%;
+}
+
+.event .rectangle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.event .image-square {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.7s ease;
+}
+
+
+.event .image-rect {
+    width: 100%;
+    transition: transform 0.7s ease;
+
+}
+
+.event .bloc-square {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 1.7%;
+    overflow: hidden;
+}
+
+.event .image-square:hover {
+    transform: scale(1.08);
+}
+
+.event .bloc-rect {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 1.7%;
+    overflow: hidden;
+}
+
+.event .image-rect:hover {
+    transform: scale(1.07);
+}
+
+.event .info-square {
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+.event .info-square h3, .event .info-square p {
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+}
+
+.event .info-rect {
+    position: absolute;
+    width: 20%;
+    height: 7%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+.event .info-rect h3, .event .info-rect p {
+    padding-top: 1%;
+    padding-left: 1%;
+}
+
+footer{
+    margin-top: 10%;
+    background-color: #00243D;
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+footer .titre{
+    padding-bottom: 10%;
+}
+
+footer .logo{
+    padding-left: 4.2%;
+}
+
+footer .space{
+    padding-bottom: 10%;
+}
+footer .box-menue{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 4.2%;
+}
+
+footer .expo{
+    padding-bottom: 10%;
+}
+
+footer .box-reseau{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .reseau{
+    width: 40%;
+    height: 40%;
+}
+
+footer .box-bas{
+    display: flex;
+    justify-content:space-between;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-bottom:2%;
+    
+}
